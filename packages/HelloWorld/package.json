@@ -1,0 +1,24 @@
+{
+  "name": "@vgc/hello-world",
+  "version": "0.0.0",
+  "description": "demo for vue-general-components",
+  "keywords": [
+    "hello-world",
+    "vue-general-components",
+    "vgc"
+  ],
+  "author": "xxholly32 <xxholly32@163.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  }
+}
