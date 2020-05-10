@@ -1,5 +1,7 @@
 <template>
-  <p class="demo">This is VGC hello {{ world }} demo</p>
+  <div>
+    <p>This is VGC hello {{ message }} demo</p>
+  </div>
 </template>
 
 <script>
@@ -7,7 +9,7 @@ export default {
   name: "HelloWorld",
   data() {
     return {
-      world: "world",
+      message: "world",
     };
   },
 };
