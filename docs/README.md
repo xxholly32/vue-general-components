@@ -10,9 +10,9 @@ home: false
 + api文档系统
 + 测试用例
 + 打包
++ changelog
 
 ### TODO
 
 + 发布
-+ changelog
 + 脚手架
