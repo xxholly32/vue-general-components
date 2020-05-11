@@ -9,10 +9,10 @@ home: false
 + hello-world
 + api文档系统
 + 测试用例
++ 打包
 
 ### TODO
 
-+ 打包
 + 发布
++ changelog
 + 脚手架
-+ 审核

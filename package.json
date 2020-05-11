@@ -10,7 +10,9 @@
   "repository": "/vue-general-components",
   "scripts": {
     "dev": "vuepress dev docs",
-    "build": "vuepress build docs"
+    "build": "vuepress build docs",
+    "test": "lerna run test",
+    "build:file": "lerna run build"
   },
   "license": "MIT",
   "devDependencies": {

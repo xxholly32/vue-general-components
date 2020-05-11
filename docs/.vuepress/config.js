@@ -44,7 +44,6 @@ module.exports = {
         title: '向导',
         collapsable: false,
         children: [
-          '/guide/',
           '/guide/using-components',
         ]
       }

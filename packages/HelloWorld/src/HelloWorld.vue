@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>This is VGC hello {{ message }} demo</p>
+    <p class="demo-box">This is VGC hello {{ message }} demo</p>
   </div>
 </template>
 
@@ -14,3 +14,11 @@ export default {
   },
 };
 </script>
+
+<style>
+/* css */
+.demo-box {
+  font-size: 24px;
+  font-weight: bold;
+}
+</style>
