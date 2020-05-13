@@ -11,8 +11,8 @@ home: false
 + 测试用例
 + 打包
 + changelog
++ 脚手架
 
 ### TODO
 
 + 发布
-+ 脚手架

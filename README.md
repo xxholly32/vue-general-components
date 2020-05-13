@@ -1,13 +1,45 @@
 # vue-general-components
 
-> repo for vue components and vuepress
+> 基于 vuepress 文档的 vue 组件快速开发方案
 
-## Development
+## 项目安装
+
+```
+mkdir <project-name>
+
+# 或 npx create-vgc
+yarn create vgc
+
+# 或 npm install
+yarn install
+
+# 安装子目录依赖
+yarn bootstrap
+```
+
+## 项目文档
 
 ```bash
+# 开发态
 yarn dev
+
+# 部署态
 yarn build
 ```
 
-For more details, please head VuePress's [documentation](https://v1.vuepress.vuejs.org/).
+## 组件开发
 
+```bash
+# 测试
+yarn test
+
+# 构建
+yarn build:file
+
+# 发布
+# yarn publish
+```
+
+## TODO
+
++ [ ] 发布
