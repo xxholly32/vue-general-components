@@ -20,7 +20,10 @@
   ],
   "scripts": {
     "test": "jest",
-    "build": "rollup --config ./build/rollup.build.js"
+    "build": "npm run build:browser && npm run build:es && npm run build:umd",
+    "build:browser": "rollup --config build/rollup.config.browser.js",
+    "build:es": "rollup --config build/rollup.config.es.js",
+    "build:umd": "rollup --config build/rollup.config.umd.js"
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^7.1.3",
