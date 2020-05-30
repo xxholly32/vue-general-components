@@ -9,28 +9,54 @@
   },
   "repository": "/vue-general-components",
   "scripts": {
-    "bootstrap":"lerna bootstrap",
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
-    "test": "lerna run test",
-    "build:file": "lerna run build",
-    "publish": "lerna publish",
+    "test": "jest",
     "cz:changelog": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
-    "cz:commit": "git-cz"
+    "cz:commit": "git-cz",
+    "build:all": "npm run build:browser && npm run build:es && npm run build:umd",
+    "build:browser": "rollup --config build/rollup.config.browser.js",
+    "build:es": "rollup --config build/rollup.config.es.js",
+    "build:umd": "rollup --config build/rollup.config.umd.js"
   },
   "license": "MIT",
   "devDependencies": {
+    "current-script-polyfill": "^1.0.0",
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
+    "@rollup/plugin-json": "^4.0.3",
+    "@rollup/plugin-node-resolve": "^7.1.3",
     "@vuepress/plugin-back-to-top": "^1.3.1",
     "@vuepress/plugin-medium-zoom": "^1.3.1",
+    "babel-core": "^6.26.0",
+    "babel-jest": "^26.0.1",
+    "babel-preset-env": "^1.6.0",
     "commitizen": "^4.1.2",
     "conventional-changelog-cli": "^2.0.34",
     "husky": "^4.2.5",
+    "jest": "^26.0.1",
+    "jest-serializer-vue": "^0.2.0",
     "lerna": "^3.13.0",
+    "rollup": "^1.16.7",
+    "rollup-plugin-babel": "^3.0.7",
+    "rollup-plugin-commonjs": "^10.0.1",
+    "rollup-plugin-css-only": "^2.0.0",
+    "rollup-plugin-gzip": "^2.5.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-uglify": "^6.0.4",
+    "rollup-plugin-uglify-es": "0.0.1",
+    "rollup-plugin-vue": "^5.0.1",
+    "sass": "^1.26.5",
+    "sass-loader": "^8.0.2",
+    "vue": "^2.6.11",
+    "vue-jest": "^3.0.5",
+    "vue-test-utils": "^1.0.0-beta.11",
     "vuepress": "^1.3.1",
     "vuepress-plugin-code-box": "^0.0.4"
   },
+  "browserslist": [
+    "defaults"
+  ],
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"
@@ -40,5 +66,21 @@
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "vue"
+    ],
+    "moduleNameMapper": {
+      "^@/(.*)$": "<rootDir>/src/$1"
+    },
+    "transform": {
+      "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
+      ".*\\.(vue)$": "<rootDir>/node_modules/vue-jest"
+    },
+    "snapshotSerializers": [
+      "<rootDir>/node_modules/jest-serializer-vue"
+    ]
   }
 }

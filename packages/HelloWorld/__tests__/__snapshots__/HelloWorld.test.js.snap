@@ -5,7 +5,7 @@ exports[`HelloWorld.test.js has the expected html structure 1`] = `
   <p
     class="demo-box"
   >
-    This is VGC hello world demo
+    This is VGC 你好 world demo
   </p>
 </div>
 `;
