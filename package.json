@@ -1,8 +1,11 @@
 {
   "name": "vue-general-components",
-  "version": "0.0.1",
-  "description": "repo for vue components and vuepress",
-  "main": "index.js",
+  "version": "0.0.2",
+  "description": "repo for vue components",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
   "authors": {
     "name": "xiangxiao",
     "email": "xxholly32@163.com"
@@ -12,16 +15,17 @@
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
     "test": "jest",
+    "release": "standard-version && npm run cz:changelog",
     "cz:changelog": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
     "cz:commit": "git-cz",
-    "build:all": "npm run build:browser && npm run build:es && npm run build:umd",
+    "clean": "rimraf lib && mkdir lib",
+    "build:all": "npm run clean && npm run build:browser && npm run build:es && npm run build:umd",
     "build:browser": "rollup --config build/rollup.config.browser.js",
     "build:es": "rollup --config build/rollup.config.es.js",
     "build:umd": "rollup --config build/rollup.config.umd.js"
   },
   "license": "MIT",
   "devDependencies": {
-    "current-script-polyfill": "^1.0.0",
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
     "@rollup/plugin-json": "^4.0.3",
@@ -33,6 +37,7 @@
     "babel-preset-env": "^1.6.0",
     "commitizen": "^4.1.2",
     "conventional-changelog-cli": "^2.0.34",
+    "current-script-polyfill": "^1.0.0",
     "husky": "^4.2.5",
     "jest": "^26.0.1",
     "jest-serializer-vue": "^0.2.0",
@@ -50,7 +55,6 @@
     "sass-loader": "^8.0.2",
     "vue": "^2.6.11",
     "vue-jest": "^3.0.5",
-    "vue-test-utils": "^1.0.0-beta.11",
     "vuepress": "^1.3.1",
     "vuepress-plugin-code-box": "^0.0.4"
   },
@@ -82,5 +86,8 @@
     "snapshotSerializers": [
       "<rootDir>/node_modules/jest-serializer-vue"
     ]
+  },
+  "dependencies": {
+    "standard-version": "^8.0.0"
   }
 }
