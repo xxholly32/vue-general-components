@@ -13,7 +13,7 @@ export default {
     commonjs(),
     css({ output(style) {
       // 压缩 css 写入 dist/vue-rollup-component-template.css
-      writeFileSync('lib/helloworld.css', new CleanCSS().minify(style).styles)
+      writeFileSync('lib/index.css', new CleanCSS().minify(style).styles)
     } }),
     // css: false 将<style>块转换为导入语句，rollup-plugin-css-only可以提取.vue文件中的样式
     vue({ css: false }),

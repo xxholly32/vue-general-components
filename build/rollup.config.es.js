@@ -2,8 +2,8 @@ import base from './rollup.config.base'
 
 const config = Object.assign({}, base, {
   output: {
-    name: 'helloworld',
-    file: 'lib/helloworld.esm.js',
+    name: 'index',
+    file: 'lib/index.esm.js',
     format: 'es'
   },
 })

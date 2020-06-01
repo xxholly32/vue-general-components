@@ -3,8 +3,8 @@ import { uglify } from 'rollup-plugin-uglify'
 
 const config = Object.assign({}, base, {
   output: {
-    name: 'helloworld',
-    file: 'lib/helloworld.umd.js',
+    name: 'index',
+    file: 'lib/index.umd.js',
     format: 'umd'
   }
 })

@@ -1,4 +1,5 @@
 const { description } = require('../../package')
+const path = require('path')
 
 module.exports = {
   /**
@@ -48,6 +49,13 @@ module.exports = {
         ]
       }
     ]
+  },
+
+  chainWebpack: webpackConfig =>{
+    webpackConfig.resolve.alias.set(
+      'vgc',
+      path.resolve(__dirname, '../../src')
+    )
   },
 
   /**

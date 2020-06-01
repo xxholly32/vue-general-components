@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p class="demo-box">This is VGC {{ t('hgc.helloworld.hello') }} {{ message }} demo</p>
+    <p class="demo-box">This is {{ t('vgc.helloworld.hello') }} {{ message }} demo</p>
   </div>
 </template>
 

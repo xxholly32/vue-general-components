@@ -4,7 +4,7 @@
  * https://v1.vuepress.vuejs.org/guide/basic-config.html#app-level-enhancements
  */
 
-import HelloWorld from "../../packages/HelloWorld/src"
+import vgc from "vgc"
 
 export default ({
   Vue, // the version of Vue being used in the VuePress app
@@ -12,6 +12,6 @@ export default ({
   router, // the router instance for the app
   siteData // site metadata
 }) => {
-  Vue.use(HelloWorld)
+  Vue.use(vgc)
   // ...apply enhancements for the site.
 }

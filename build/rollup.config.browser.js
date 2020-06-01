@@ -4,8 +4,8 @@ import { uglify } from "rollup-plugin-uglify";
 const config = Object.assign({}, base, {
   output: {
     exports: "named",
-    name: "helloworld",
-    file: "lib/helloworld.min.js",
+    name: "index",
+    file: "lib/index.min.js",
     format: "iife",
   },
 });
