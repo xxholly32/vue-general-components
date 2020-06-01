@@ -1,6 +1,6 @@
 {
   "name": "vue-general-components",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "repo for vue components",
   "main": "lib/index.js",
   "files": [
