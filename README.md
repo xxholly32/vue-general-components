@@ -4,15 +4,7 @@
 
 ## 项目背景
 
-在日常生活中，我们经常会用 `vue-cli` 开发很多组件在项目中，而一些优秀的组件会随着项目结项而`封印`；社区上有很多优秀的 ui 库比如，[element-ui](https://element.eleme.cn/)、[ant-design-vue](https://antdv.com/docs/vue/introduce-cn/)等，又无法加入自己的组件到其中，也无法魔改他们的组件。所以一个简单快速的开发 vue 组件的项目就这么诞生了；
-
-本项目包含以下功能
-
-- [x] hello-world 组件
-- [x] 组件 api 文档系统
-- [x] 组件测试用例
-- [x] 组件打包
-- [x] 组件版本日志
+在日常开发中，我们经常会在项目中写很多组件，有些是通用的有些是非常业务的，而一些优秀的组件会随着项目结项而`封印`；而不会说提炼成对应的 npm 仓库；社区上有很多优秀的 ui 库比如，[element-ui](https://element.eleme.cn/)、[ant-design-vue](https://antdv.com/docs/vue/introduce-cn/)等，又无法加入自己的组件到其中，也无法魔改他们的组件。所以 一个简单快速的开发 vue 组件的项目 vue-general-components 就这么诞生了；
 
 ## 项目安装
 
@@ -31,6 +23,14 @@ yarn install
 > vgc 即 vue-general-components
 
 或者直接 fork [vgc 项目](https://github.com/xxholly32/vue-general-components)
+
+生成包含以下功能
+
+- [x] hello-world 组件
+- [x] 组件 api 文档系统
+- [x] 组件测试用例
+- [x] 组件打包
+- [x] 组件版本日志
 
 ## 组件开发
 
@@ -70,12 +70,12 @@ export default {
 </style>
 ```
 
-> 如果不是`yarn create vgc`命令生成的项目一定要修改对应的 packagename，这个很重要，因为最终发布到 npm 是根据这个名字来的
+> 如果不是`yarn create vgc`命令生成的项目一定要修改对应的 package.json 中的 name，这个很重要，因为最终发布到 npm 是根据这个名字来的
 
 ### 组件测试用例
 
 我引入的是 jest ，没有引入 vue-test-utils，这个具体可以根据熟悉情况修改，在 demo 中加入了一个简单的 helloworld test 供参考；但我没有加测试覆盖率等其他的内容。
-  
+
 > 一个优秀的软件，test 必不可少
 
 `package.json` 配置
@@ -156,10 +156,12 @@ yarn release
 
 > 更多内容可以查看 [git commit 规范参考](https://juejin.im/post/5e8ee53251882573cb7221c2#heading-15)
 
-它
+## 发布
 
-## 最后只需要 push 到 npm 仓库就好了
+最后只需要 push 到 npm 仓库就好了
 
 ```
 npm publish
 ```
+
+> 可以用 npm link 软链接的方式在本地进行开发

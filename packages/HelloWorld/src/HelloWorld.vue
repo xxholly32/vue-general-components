@@ -1,18 +1,21 @@
 <template>
   <div>
-    <p class="demo-box">This is {{ t('vgc.helloworld.hello') }} {{ message }} demo</p>
+    <p class="demo-box">
+      This is {{ t("vgc.helloworld.hello") }} {{ message }}
+    </p>
   </div>
 </template>
 
 <script>
-import Locale from '../../../src/utils/mixins/locale.js';
+import Locale from "../../../src/utils/mixins/locale.js";
 export default {
   name: "HelloWorld",
   mixins: [Locale],
-  data() {
-    return {
-      message: "world",
-    };
+  props: {
+    message: {
+      type: String,
+      default: "world",
+    },
   },
 };
 </script>
