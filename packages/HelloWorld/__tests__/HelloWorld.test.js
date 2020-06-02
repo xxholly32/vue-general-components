@@ -1,24 +1,20 @@
-import Vue from "vue";
+
+import { mount } from '@vue/test-utils'
 import HelloWorld from "../src/HelloWorld";
 
 describe("HelloWorld.test.js", () => {
-  let cmp, vm;
-
-  beforeEach(() => {
-    cmp = Vue.extend(HelloWorld); // Create a copy of the original component
-    vm = new cmp({
-      data: {
-        // Replace data value with this fake data
-        message: "world",
-      },
-    }).$mount(); // Instances and mounts the component
-  });
+  // 现在挂载组件，你便得到了这个包裹器
+  const wrapper = mount(HelloWorld, {
+    propsData: {
+      message: 'World1'
+    }
+  })
 
   it('message includes "world"', () => {
-    expect(vm.$el.querySelector("p").outerHTML).toContain("world");
+    expect(wrapper.html()).toContain("World1");
   });
 
   it("has the expected html structure", () => {
-    expect(vm.$el).toMatchSnapshot();
+    expect(wrapper.html()).toMatchSnapshot();
   });
 });

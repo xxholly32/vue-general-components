@@ -58,7 +58,11 @@ module.exports = {
       path.resolve(__dirname, "../../src")
     );
   },
-
+  markdown: {
+    extendMarkdown: (md) => {
+      md.use(require("markdown-it-task-lists"));
+    },
+  },
   /**
    * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
    */

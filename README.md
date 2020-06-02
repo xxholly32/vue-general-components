@@ -74,7 +74,7 @@ export default {
 
 ### 组件测试用例
 
-我引入的是 jest ，没有引入 vue-test-utils，这个具体可以根据熟悉情况修改，在 demo 中加入了一个简单的 helloworld test 供参考；但我没有加测试覆盖率等其他的内容。
+我引入的是 jest ，以及 [vue-test-utils](https://vue-test-utils.vuejs.org/zh/)，在 demo 中加入了一个简单的 helloworld test 供参考；
 
 > 一个优秀的软件，test 必不可少
 
