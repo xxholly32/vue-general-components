@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.5](///compare/v0.0.4...v0.0.5) (2020-06-03)
+
+
+### Features
+
+* 修复引入的bug ([e43a1b2](///commit/e43a1b26212c66e222ba9370e1ce3fc0c5f8daf7))
+* 添加githubpage ([97994c9](///commit/97994c931dcae23574028f404579a5a3af943603))
+
 ### [0.0.4](///compare/v0.0.3...v0.0.4) (2020-06-02)
 
 
