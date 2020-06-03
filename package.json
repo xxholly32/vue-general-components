@@ -2,7 +2,7 @@
   "name": "vue-general-components",
   "version": "0.0.4",
   "description": "repo for vue components",
-  "main": "lib/index.js",
+  "main": "lib/index.esm.js",
   "files": [
     "lib"
   ],

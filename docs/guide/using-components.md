@@ -10,7 +10,7 @@ yarn add vue-general-components
 
 ```js
 import vgc from "vue-general-components";
-import "vue-general-components/index.css";
+import "vue-general-components/lib/index.css";
 
 Vue.use(vgc);
 ```
