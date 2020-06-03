@@ -1,4 +1,4 @@
-const { description } = require("../../package");
+const { name, description } = require("../../package");
 const path = require("path");
 
 module.exports = {
@@ -6,6 +6,7 @@ module.exports = {
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
   title: "Vue General Components",
+  base: `/${name}/`,
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */

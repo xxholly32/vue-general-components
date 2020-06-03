@@ -22,7 +22,8 @@
     "build:all": "npm run clean && npm run build:browser && npm run build:es && npm run build:umd",
     "build:browser": "rollup --config build/rollup.config.browser.js",
     "build:es": "rollup --config build/rollup.config.es.js",
-    "build:umd": "rollup --config build/rollup.config.umd.js"
+    "build:umd": "rollup --config build/rollup.config.umd.js",
+    "deploy": "bash deploy.sh"
   },
   "license": "MIT",
   "devDependencies": {
