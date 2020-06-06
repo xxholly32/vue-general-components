@@ -1,23 +1,23 @@
-# vue-general-components
+# 快速搭建 vue 组件方案 vue-general-components
 
-> 基于 vuepress 文档的 vue 组件快速开发方案
+一个基于 vue2，vuepress，rollup，以及集成 npm 命令的 vue 组件快速开发工具 vue-general-components
 
 ## 项目背景
 
 在日常开发中，我们经常会在项目中写很多组件，有些是通用的有些是非常业务的，而一些优秀的组件会随着项目结项而`封印`；而不会说提炼成对应的 npm 仓库；社区上有很多优秀的 ui 库比如，[element-ui](https://element.eleme.cn/)、[ant-design-vue](https://antdv.com/docs/vue/introduce-cn/)等，又无法加入自己的组件到其中，也无法魔改他们的组件。所以 一个简单快速的开发 vue 组件的项目 vue-general-components 就这么诞生了；
+
+它是一键生成组件项目的脚手架，从搭建到发布到 npm 仓库只需要 1 分钟，还不赶快来试试！！
 
 ## 项目安装
 
 利用脚手架安装
 
 ```
-mkdir <project-name>
+yarn create vgc <project-name># 或 npx create-vgc <project-name>
 
-# 或 npx create-vgc
-yarn create vgc
+yarn install # 或 npm install
 
-# 或 npm install
-yarn install
+yarn dev
 ```
 
 > vgc 即 vue-general-components
@@ -106,6 +106,8 @@ export default {
 我加入了自己的一个插件 [vuepress-plugin-code-box](https://xxholly32.github.io/vuepress-plugin-code-box/guide/)，支持代码的隐藏可让展现方式多样化。antd 和 elementui 都有类似。
 
 vuepress 默认的 dev 和 build 功能也支持，如果你想发布到 pages 上可以查看 [vuepress 部署文档](https://vuepress.vuejs.org/zh/guide/deploy.html#%E9%83%A8%E7%BD%B2)
+
+[demo实例地址](https://xxholly32.github.io/vue-general-components/#%E9%A1%B9%E7%9B%AE%E8%83%8C%E6%99%AF)
 
 ## 组件打包
 
