@@ -1,6 +1,6 @@
 # 快速搭建 vue 组件方案 vue-general-components
 
-一个基于 vue2，vuepress，rollup，以及集成 npm 命令的 vue 组件快速开发工具 vue-general-components
+一个基于 vue2，vuepress，rollup的 vue 组件快速开发工具 vue-general-components
 
 ## 项目背景
 
