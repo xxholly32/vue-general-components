@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.6](///compare/v0.0.5...v0.0.6) (2020-07-06)
+
+
+### Features
+
+*  external vue ([ae010ab](///commit/ae010ab2723bdff56df3b5f2abf7d70487a4d1c2))
+* 🎸 新增 git-cz 提交带图标功能 ([eb5ee4c](///commit/eb5ee4c4a2b52f86eef3c383fdd2d5ea26d23417))
+
+
+### Bug Fixes
+
+* 修复缺少rimraf依赖的问题 ([715dfe8](///commit/715dfe8b3af6783be504ece045529bdcea064d36))
+
 ### [0.0.5](///compare/v0.0.4...v0.0.5) (2020-06-03)
 
 
