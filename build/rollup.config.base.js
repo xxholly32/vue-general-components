@@ -8,6 +8,7 @@ import { writeFileSync } from 'fs' // 写文件
 
 export default {
   input: 'src/index.js',
+  external: ['vue'], //使用外部的依赖，如果使用内部 vue 会照成多重引用
   plugins: [
     resolve({ extensions: ['.vue'] }),
     commonjs(),
